@@ -15,7 +15,6 @@ double ddR(double R,double z);
 double ddz (double R,double z);
 double dphi (double R, double z, double s);
 void NumMethod(double a,double b, double da, double db,double h);
-double ddx(double s, double x);
 double testNumMethod(double a, double da, double h, double s);
 double testRk4(double a, double da, double h, double s);
 int main(void)
