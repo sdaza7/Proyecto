@@ -9,6 +9,7 @@ double ddx(double x);
 const double M_PI = 3.14159265358979;
  const double w = M_PI;
  const double h = 0.001;
+ double nt = 2.0/h;
  double a = 3.21;
 
 int main()
@@ -31,9 +32,10 @@ double oscilador (double w, double h, double y0, fptr ddx)
     double y1 = 0;
     double yn = 0;
     yb = y0 + (h*h/2)*(ddx(y0));
-    for (int ii=0; ii<=2000; ++ii)
+    for (int ii=0; ii<=nt; ++ii)
     {
-        cout << ii << "\t";
+        double t = 0.0+ii*h;
+        cout << t << "\t";
         if (ii == 0)
         {
             cout << y0 << "\n";
