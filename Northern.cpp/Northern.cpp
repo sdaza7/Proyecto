@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-const long double M_PI = 3.14159265358979;
 double R0 = 0.257453;
 double z0 = 0.314687;
 const double v = -0.5;
